@@ -1,0 +1,7 @@
+{
+  "name": "class-app-i7-v4",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
