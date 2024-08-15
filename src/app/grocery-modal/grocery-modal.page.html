@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ item ? 'Edit Grocery' : 'Add Grocery' }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Quantity</ion-label>
+    <ion-input type="number" [(ngModel)]="quantity"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="save()">Save</ion-button>
+</ion-content>
